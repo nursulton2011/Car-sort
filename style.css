@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('./Без названия (5).jpg');
+    /* Фон для обычных экранов */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+        /* Высота страницы равна высоте экрана */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 600px) {
+    body {
+        background-image: url('./71a17d97-94e4-4a23-a0a7-6bd15f23f2d3\ \(1\).png    ');
+        /* Фон для мобильных устройств */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#addButton {
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: skyblue;
+    justify-content: center;
+}
+
+#resetButton {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: red;
+    margin-top:     px;
+    margin-left: 10px;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+}
+.Button{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#carList {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    margin-left: -50px;
+}
+#addButton,
+#resetButton {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    background: linear-gradient(to right, #f9f9f9, #ffffff);
+}
+#addButton:hover {
+    background-color: darkblue;
+}
+
+#resetButton:hover {
+    background-color: darkred;
+}
+:root {
+    --main-color: blue;
+    --danger-color: red;
+    --button-radius: 10px;
+}
+
+#addButton {
+    background-color: var(--main-color);
+    border-radius: var(--button-radius);
+}
+
+#resetButton {
+    background-color: var(--danger-color);
+}       
+@media (max-width: 600px) {
+    input{
+        width: auto;
+    }
+    #addButton,
+    #resetButton {
+        font-size: 14px;
+        height: 50px;
+    margin-left: 0px;
+    margin-top: 10px;
+    }
+}

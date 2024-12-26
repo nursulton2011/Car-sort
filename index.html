@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <h1>Список автомобилей</h1>
+        <form id="carForm">
+            <input type="text" id="name" placeholder="Название автомобиля" required />
+            <input type="text" id="model" placeholder="Модель" required />
+            <input type="number" id="year" placeholder="Год выпуска" required />
+            <input type="number" id="price" placeholder="Цена" required />
+        </form>
+        <div class="Button">
+            <button type="button" id="addButton">Добавить в список</button>
+            <button id="resetButton">
+                <img src="./free-icon-trash-bin-8568959.png" alt="">
+                Очистить список
+            </button>
+
+        </div>
+        <ul id="carList"></ul>
+    </div>
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="./script.js"></script>
+</body>
+</html>
